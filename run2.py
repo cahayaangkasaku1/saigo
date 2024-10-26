@@ -168,7 +168,7 @@ while emails:
         driver.quit()
         
         # Tunggu sebentar sebelum mengulangi proses jika masih ada email
-        time.sleep(30)
+        time.sleep(5)
 
 # Setelah semua email diproses, program selesai
 print("Semua email selesai diproses.")
