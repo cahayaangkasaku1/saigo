@@ -44,8 +44,8 @@ while emails:
         # Start the automation
         driver.get("https://app.netlify.com/login")
         time.sleep(5)
-        
-        driver.maximize_window()  # Open browser in full screen
+
+        driver.set_window_size(1200, 1000)
         time.sleep(3)
         
         driver.find_element(By.CSS_SELECTOR, ".tw-text-left").click()
@@ -72,7 +72,7 @@ while emails:
         time.sleep(3)
         
         driver.find_element(By.CSS_SELECTOR, ".tw-flex > .btn").click()
-        time.sleep(5)
+        time.sleep(15)
 
         # Check if the "Import from Git" element exists
         try:
@@ -118,11 +118,11 @@ while emails:
 
         # Klik elemen tersebut
         element.click()
-        time.sleep(7)
+        time.sleep(20)
         
         # Click "Disable visual editing"
         driver.find_element(By.XPATH, "//button[contains(@class, 'btn-secondary--danger') and text()='Disable visual editing']").click()
-        time.sleep(7)
+        time.sleep(10)
         
         # Scroll to SiteName and fill with random name
         site_name_element = driver.find_element(By.NAME, "siteName")
@@ -131,7 +131,7 @@ while emails:
         site_name = generate_random_site_name()
         site_name_element.send_keys(site_name)
         site_name_element.send_keys(Keys.ENTER)
-        time.sleep(10)
+        time.sleep(25)
               
         driver.find_element(By.CSS_SELECTOR, "#deploys-secondary-nav-item .tw-transition").click()
         time.sleep(5)
@@ -168,7 +168,7 @@ while emails:
         driver.quit()
         
         # Tunggu sebentar sebelum mengulangi proses jika masih ada email
-        time.sleep(5)
+        time.sleep(2)
 
 # Setelah semua email diproses, program selesai
 print("Semua email selesai diproses.")
