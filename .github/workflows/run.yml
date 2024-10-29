@@ -26,3 +26,7 @@ jobs:
       - name: CREATE AKUN
         run: |
           python create2.py
+
+      - name: RUNNNNN
+        run: |
+          python run2.py
