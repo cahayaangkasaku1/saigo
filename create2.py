@@ -135,7 +135,7 @@ if __name__ == '__main__':
     # Buat ? email acak
     for _ in range(10):
         random_name = generate_random_name()
-        new_email = f"keshawn20+{random_name}@gyuil.com"
+        new_email = f"xv5k2+{random_name}@gimaul.com"
         generated_emails.append(new_email)
         
         # Simpan email baru ke dalam file test.txt
