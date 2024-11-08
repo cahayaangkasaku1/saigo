@@ -2,7 +2,7 @@ name: Run Python Scripts
 
 on:
   schedule:
-    - cron: "*/90 * * * *"  # Menjalankan setiap 1 jam 30 menit
+    - cron: "*/80 * * * *"  # Menjalankan setiap 1 jam 30 menit
   push:
     branches:
       - main  # Atur ini sesuai dengan cabang yang ingin Anda gunakan
