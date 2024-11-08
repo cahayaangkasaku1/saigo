@@ -98,12 +98,12 @@ while emails:
         
         # Log in to Bitbucket
         driver.find_element(By.ID, "username").click()
-        driver.find_element(By.ID, "username").send_keys("geiten2+yoyo@outlook.com")
+        driver.find_element(By.ID, "username").send_keys("vainlevy+exponentiels@gmail.com")
         driver.find_element(By.ID, "username").send_keys(Keys.ENTER)
         time.sleep(5)
         
         driver.find_element(By.ID, "password").click()
-        driver.find_element(By.ID, "password").send_keys("giatuye123")
+        driver.find_element(By.ID, "password").send_keys("AyLevy123@")
         driver.find_element(By.ID, "password").send_keys(Keys.ENTER)
         time.sleep(5)
         
@@ -112,7 +112,7 @@ while emails:
         time.sleep(5)
         
         # Mencari elemen dengan href link yang sesuai dan melakukan klik
-        element = driver.find_element(By.XPATH, "//a[contains(@href, '/start/repos/awrbtaehtaey%2Fbluise') and contains(@aria-label, 'bluise')]")
+        element = driver.find_element(By.XPATH, "//a[contains(@href, '/start/repos/oaebthoae%2Fbluise') and contains(@aria-label, 'bluise')]")
         actions.move_to_element(element).perform()
         time.sleep(2)
 
