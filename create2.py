@@ -79,10 +79,12 @@ def clean_email(email):
 def sign_up_netlify(email):
     driver = webdriver.Chrome()  # Pastikan ChromeDriver ada di PATH sistem
     driver.get("https://app.netlify.com/signup")
+    
+    sleep(15)
 
     try:
         sign_up_with_email_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[2]/div/div/div/main/div/div/section/div/div[1]/div/p[1]/button"))
+            EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Sign up with email')]"))
         )
         sign_up_with_email_button.click()
 
