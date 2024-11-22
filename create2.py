@@ -150,4 +150,4 @@ if __name__ == '__main__':
         driver = sign_up_netlify(email)
         verify_netlify_account(driver)
         fill_in_additional_details(driver, email)
-        sleep(30)
+        sleep(300)
