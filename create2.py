@@ -133,7 +133,7 @@ if __name__ == '__main__':
     generated_emails = []
     
     # Buat ? email acak
-    for _ in range(10):
+    for _ in range(1):
         random_name = generate_random_name()
         new_email = f"nehhp+{random_name}@gsweety.com"
         generated_emails.append(new_email)
